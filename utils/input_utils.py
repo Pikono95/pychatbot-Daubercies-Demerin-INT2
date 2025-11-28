@@ -6,7 +6,8 @@ def ask_text(text):
 def ask_choice(message, option):
     a = 0
     while a == 0:
-        for i in range(len(options):
-            a = input(message)
-    return options[int(a)-1]
-f = ask_choice("Select an option:", ["Option 1", "Option 2", "Option 3"])
+        print(message, end='\n')
+        for i in range(len(option)):
+            print(str(i+1)+". "+option[i])
+        a = int(input()) 
+    return option[a-1]
